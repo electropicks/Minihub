@@ -35,13 +35,14 @@ const PageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: scroll;
 `
 
 const HomeContainer = styled.div`
   background-color: #eaeaea;
   border-radius: 17px;
   width: 80vw;
-  height: 80vh;
+  height: 630px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,9 +52,6 @@ const HomeContainer = styled.div`
     width: 450px;
   }
 
-  @media screen and (min-height: 700px) {
-    height: 630px;
-  }
 `
 const Title = styled.div`
   font-family: 'Bebas Neue';
