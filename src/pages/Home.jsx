@@ -1,22 +1,36 @@
-import React from 'react';
 import styled from "styled-components";
-import Home from "./pages/Home";
-import GameSelection from "./pages/GameSelection";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 
-function App() {
-  return (
-    <Router>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="GameSelection" element={<GameSelection />} />
-    </Routes>
-    </Router>
+const Home = () => {
+  const navigate = useNavigate();
+    return (
+        <PageContainer>
+            <HomeContainer>
+                <Title>MINIHUB</Title>
+                <DescriptionContainer>
+                    <DescriptionParagraph>
+                        Welcome!
+                    </DescriptionParagraph>
+                    <DescriptionParagraph>
+                        This is a space for Liam &amp; Leo to collaborate. We're excited to share this space with you.
+                    </DescriptionParagraph>
+                    <DescriptionParagraph>
+                        Jump in below.
+                    </DescriptionParagraph>
+                </DescriptionContainer>
 
-  )
+                <ButtonContainer>
+                  <EnterButton>
+                    <EnterButtonText onClick={() => navigate('/GameSelection')}>LET'S GO</EnterButtonText>
+                  </EnterButton>
+                </ButtonContainer>
+            </HomeContainer>
+        </PageContainer>
+    )
 }
 
-export default App;
+export default Home;
 
 const HomeContainer = styled.div`
   background-color: #eaeaea;
