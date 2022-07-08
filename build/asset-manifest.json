@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Minihub/static/css/main.073c9b0a.css",
+    "main.js": "/Minihub/static/js/main.e2063ded.js",
+    "static/js/787.17a79e4f.chunk.js": "/Minihub/static/js/787.17a79e4f.chunk.js",
+    "static/media/logo.svg": "/Minihub/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Minihub/index.html",
+    "main.073c9b0a.css.map": "/Minihub/static/css/main.073c9b0a.css.map",
+    "main.e2063ded.js.map": "/Minihub/static/js/main.e2063ded.js.map",
+    "787.17a79e4f.chunk.js.map": "/Minihub/static/js/787.17a79e4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e2063ded.js"
+  ]
+}
