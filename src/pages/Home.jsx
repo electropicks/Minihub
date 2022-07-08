@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
     return (
         <PageContainer>
             <HomeContainer>
@@ -19,9 +21,9 @@ const Home = () => {
                 </DescriptionContainer>
 
                 <ButtonContainer>
-                    <EnterButton>
-                        <EnterButtonText>LET'S GO</EnterButtonText>
-                    </EnterButton>
+                  <EnterButton>
+                    <EnterButtonText onClick={() => navigate('/GameSelection')}>LET'S GO</EnterButtonText>
+                  </EnterButton>
                 </ButtonContainer>
             </HomeContainer>
         </PageContainer>
