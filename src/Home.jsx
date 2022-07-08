@@ -1,19 +1,33 @@
 import styled from "styled-components";
-import Home from "./Home";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-          <Route path="/welcome" element={Home} />
-      </Routes>
-    </Router>
+const Home = () => {
+    return (
+        <PageContainer>
+            <HomeContainer>
+                <Title>MINIHUB</Title>
+                <DescriptionContainer>
+                    <DescriptionParagraph>
+                        Welcome!
+                    </DescriptionParagraph>
+                    <DescriptionParagraph>
+                        This is a space for Liam &amp; Leo to collaborate. We're excited to share this space with you.
+                    </DescriptionParagraph>
+                    <DescriptionParagraph>
+                        Jump in below.
+                    </DescriptionParagraph>
+                </DescriptionContainer>
 
-  )
+                <ButtonContainer>
+                    <EnterButton>
+                        <EnterButtonText>LET'S GO</EnterButtonText>
+                    </EnterButton>
+                </ButtonContainer>
+            </HomeContainer>
+        </PageContainer>
+    )
 }
 
-export default App;
+export default Home;
 
 const HomeContainer = styled.div`
   background-color: #eaeaea;
