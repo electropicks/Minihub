@@ -63,7 +63,7 @@ const Title = styled.div`
   text-shadow: 1px 1px #a45959, 2px 2px #a48559, 3px 3px #a3a459, 4px 4px #68a459, 5px 5px #59a3a4, 6px 6px #5963a4, 7px 7px #6959a4;
 `
 const DescriptionContainer = styled.div`
-  padding: 30 px;
+  padding: 30px;
   color: #4b4b4b;
   font-family: 'Noto Sans';
   font-size: 20px;
