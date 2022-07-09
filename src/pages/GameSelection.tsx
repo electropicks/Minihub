@@ -17,7 +17,6 @@ const GameContainer = styled.div<GameProps>`
     height: 200px;
     width: 200px;
     left: ${props => (props.order > 3 ? props.order - 3 : props.order) * 25 + "%"};
-    border: 20px solid green;
 `
 
 interface GameProps {
