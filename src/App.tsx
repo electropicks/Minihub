@@ -7,16 +7,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="GameSelection" element={<GameSelection />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="GameSelection" element={<GameSelection />} />
+      </Routes>
     </Router>
 
   )
 }
 
-export default App;
+export default App
 
 const HomeContainer = styled.div`
   background-color: #eaeaea;
