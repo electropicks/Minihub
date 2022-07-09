@@ -3,7 +3,14 @@ import styled from "styled-components";
 
 const GameSelection = () => {
     return (
+        <div>
+        <GameContainer order={1}></GameContainer>
+        <GameContainer order={2}></GameContainer>
+        <GameContainer order={3}></GameContainer>
+        <GameContainer order={4}></GameContainer>
+        <GameContainer order={5}></GameContainer>
         <GameContainer order={6}></GameContainer>
+        </div>
     )
 }
 
@@ -16,7 +23,6 @@ const GameContainer = styled.div<GameProps>`
     background-color: #eaeaea;
     height: 200px;
     width: 200px;
-    left: ${props => (props.order > 3 ? props.order - 3 : props.order) * 25 + "%"};
 `
 
 interface GameProps {
