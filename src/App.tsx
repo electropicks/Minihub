@@ -4,6 +4,9 @@ import Home from "./pages/Home";
 import GameSelection from "./pages/GameSelection";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// App palette:
+// #ffe1c6, #5d5f71, #e3655b, #68b0ab, #2f4858
+
 function App() {
   return (
     <Router>
