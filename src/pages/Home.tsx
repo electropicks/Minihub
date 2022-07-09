@@ -4,30 +4,30 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
-    return (
-        <PageContainer>
-            <HomeContainer>
-                <Title>MINIHUB</Title>
-                <DescriptionContainer>
-                    <DescriptionParagraph>
-                        Welcome!
-                    </DescriptionParagraph>
-                    <DescriptionParagraph>
-                        This is a space for Liam &amp; Leo to collaborate. We're excited to share this space with you.
-                    </DescriptionParagraph>
-                    <DescriptionParagraph>
-                        Jump in below.
-                    </DescriptionParagraph>
-                </DescriptionContainer>
+  return (
+    <PageContainer>
+      <HomeContainer>
+        <Title>MINIHUB</Title>
+        <DescriptionContainer>
+          <DescriptionParagraph>
+            Welcome!
+          </DescriptionParagraph>
+          <DescriptionParagraph>
+            We're building cool things, and we'd like to share them with you.
+          </DescriptionParagraph>
+          <DescriptionParagraph>
+            Made with {["❤️", "💙", "🧡", "💛", "💚", "💙", "💜", "🤎"][Math.floor(Math.random() * 8)]} by Liam &amp; Leo
+          </DescriptionParagraph>
+        </DescriptionContainer>
 
-                <ButtonContainer>
-                  <EnterButton>
-                    <EnterButtonText onClick={() => navigate('/GameSelection')}>LET'S GO</EnterButtonText>
-                  </EnterButton>
-                </ButtonContainer>
-            </HomeContainer>
-        </PageContainer>
-    )
+        <ButtonContainer>
+          <EnterButton>
+            <EnterButtonText onClick={() => navigate('/GameSelection')}>LET'S GO</EnterButtonText>
+          </EnterButton>
+        </ButtonContainer>
+      </HomeContainer>
+    </PageContainer>
+  )
 }
 
 export default Home;
@@ -41,7 +41,7 @@ const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 15px;
-
+  
   @media screen and (min-width: 500px) {
     width: 450px;
   }
@@ -56,7 +56,7 @@ const Title = styled.div`
   text-shadow: 1px 1px #a45959, 2px 2px #a48559, 3px 3px #a3a459, 4px 4px #68a459, 5px 5px #59a3a4, 6px 6px #5963a4, 7px 7px #6959a4;
 `
 const DescriptionContainer = styled.div`
-  padding: 30px;
+  padding: 40px;
   color: #4b4b4b;
   font-family: 'Noto Sans';
   font-size: 20px;
