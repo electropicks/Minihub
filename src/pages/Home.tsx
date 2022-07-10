@@ -53,7 +53,7 @@ const Title = styled.div`
   margin: 15px;
   color: black;
   font-size: 79px;
-  text-shadow: 1px 1px #a45959, 2px 2px #a48559, 3px 3px #a3a459, 4px 4px #68a459, 5px 5px #59a3a4, 6px 6px #5963a4, 7px 7px #6959a4;
+  text-shadow: 1px 1px 0.25mm #a45959, 2px 2px 0.25mm #a48559, 3px 3px 0.25mm #a3a459, 4px 4px 0.25mm #68a459, 5px 5px 0.25mm #59a3a4, 6px 6px 0.25mm #5963a4, 7px 7px 0.25mm #6959a4;
 `
 const DescriptionContainer = styled.div`
   padding: 40px;
